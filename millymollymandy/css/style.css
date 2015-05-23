@@ -1,0 +1,220 @@
+body {
+    margin: 0 auto;
+    height: 3000px;
+}
+
+header {
+    background-image: url(/images/bg_tile.png);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    text-align: center;
+    vertical-align: text-top;
+    z-index: 30;
+}
+
+.stamp {
+    background-image: url(http://www.millymollymandycakes.co.uk/communities/8/004/011/837/678/images/4592088502.gif);
+    float: right;
+    position: relative;
+    top: -130px;
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    opacity: 0.4;
+}
+
+.header-bottom {
+    width: 100%;
+    background: url(/images/bg_jagged_edge.png) repeat-x;
+    background-position: -15px -10px;
+    height: 50px;
+}
+
+header .logo {
+    display: inline-block;
+    position: relative;
+    height: 0;
+    cursor: pointer;
+}
+
+header .logo img:hover {
+    margin-top: 13px;
+}
+
+header .logo img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    position: relative;
+    -webkit-transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 2.275);
+    transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 2.275);
+    box-shadow: 0px 4px 3px -4px #A8A8A8;
+}
+
+header .menu-left {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    padding: 40px;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    padding-bottom: 10px;
+}
+
+header .menu-right {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    padding: 40px;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    padding-bottom: 10px;
+}
+
+header .menu-left span {
+    padding: 8px 10px 5px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    border-bottom: 1px dashed rgba(52, 73, 94, 0.7);
+    cursor: pointer;
+}
+
+header .menu-left span:hover {
+    background-color: rgba(225, 136, 239, 0.15);
+    border-bottom: 1px dashed rgba(245, 157, 255, 0.7);
+}
+
+header .menu-right span:hover {
+    background-color: rgba(225, 136, 239, 0.15);
+    border-bottom: 1px dashed rgba(245, 157, 255, 0.7);
+}
+
+header .menu-right span {
+    padding: 8px 10px 5px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    border-bottom: 1px dashed rgba(52, 73, 94, 0.7);
+    cursor: pointer;
+}
+
+.header {
+    background: url(http://www.millymollymandycakes.co.uk/communities/8/004/011/837/678//images/4592377187.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: -134px;
+}
+
+.header .content {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Lora', serif;
+}
+
+.header .content .title {
+    font-weight: lighter;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.header .content .description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.section-top {
+    width: 100%;
+    background: url(/images/bg_jagged_shadow.png) repeat-x;
+    background-position: -8px 0%;
+    background-color: rgba(255, 0, 0, 0);
+    height: 25px;
+    margin-top: -25px;
+    display: inline-block;
+    display: none;
+}
+
+.our-cakes {
+    padding: 20px;
+    height: 100px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.our-cakes .cake-type {
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -moz-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -o-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    /* ease-in-out */
+    
+    -webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    /* ease-in-out */
+}
+
+.our-cakes .cake-type:hover {
+    margin-top: -10px;
+}
+
+.our-cakes .cake-type .content {
+    background: #ffebf7;
+    background-image: url(/images/bg_tile.png);
+    border-radius: 5px;
+    height: 375px;
+    font-family: 'Lora', serif;
+}
+
+.our-cakes .cake-type .content h4 {
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+.our-cakes .cake-type .content .type-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.our-cakes .cake-type .content .description {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.our-cakes .cake-type .content img {
+    width: 100%;
+}
+
+.our-cakes .icon {
+    height: 50px;
+    width: 100px;
+    margin: 0 auto;
+    background-image: url(/images/cupcake.png);
+    background-size: 40px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.our-cakes .divider {
+    border-bottom: 1px dashed #ebc6e3;
+    height: 26px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    width: 600px;
+}
