@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Proxima Light Italic';
+    src: url(http://yebocreative.com/freebies/css/fonts/proxima_nova_light_it.eot);
+    src: url(http://yebocreative.com/freebies/css/fonts/proxima_nova_light_it.eot?#iefix) format('embedded-opentype'), url(/fonts/proxima_nova_light_it.woff) format('woff'), url(http://yebocreative.com/freebies/css/proxima_nova_light_it.ttf) format('truetype'), url(http://yebocreative.com/freebies/css/proxima_nova_light_it.svg#proxima_novalight_italic) format('svg');
+    font-weight: 300;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Proxima Light';
+    src: url(http://yebocreative.com/freebies/css/fonts/proxima_nova_light.eot);
+    src: url(http://yebocreative.com/freebies/css/fonts/proxima_nova_light.eot?#iefix) format('embedded-opentype'), url(/fonts/proxima_nova_light.woff) format('woff'), url(http://yebocreative.com/freebies/css/fonts/proxima_nova_light.ttf) format('truetype'), url(http://yebocreative.com/freebies/css/fonts/proxima_nova_light.svg#proxima_novalight) format('svg');
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima SemiBold';
+    src: url(http://yebocreative.com/freebies/css/fonts/proximanova-sbold.eot);
+    src: url(http://yebocreative.com/freebies/css/fonts/proximanova-sbold.eot?#iefix) format('embedded-opentype'), url(/fonts/proximanova-sbold.woff) format('woff'), url(http://yebocreative.com/freebies/css/fonts/proximanova-sbold.ttf) format('truetype'), url(http://yebocreative.com/freebies/css/fonts/proximanova-sbold.svg#proxima_novasemibold) format('svg');
+    font-weight: 600;
+    font-style: normal
+}
+
+body {
+    font-family: Ubuntu;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-family: 'Proxima SemiBold'
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    color: white;
+    z-index:20;
+/*    background-color: rgba(0, 0, 0, 0.3);*/
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+section {
+    min-height:100vh;
+}
+
+nav .left,
+nav .right,
+nav .logo {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+nav .logo img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+nav .left,
+nav .right{
+    width:25%;
+}
+
+nav .left{
+    text-align: right;
+}
+
+nav .right{
+    text-align: left;
+}
+
+nav .logo {
+    width: 75px;
+    height: 75px;
+    margin:0 20px;
+    padding:3px;
+    padding-top:5px;
+}
+
+nav .item {
+    display: inline-block;
+    padding: 10px;
+    margin-top:20px;
+}
+
+nav .left .item:first-child:after {
+    content: '.';
+    margin-left: 23px;
+}
+
+nav .right .item:last-child:before {
+    content: '.';
+    margin-right: 23px;
+}
+
+#header {
+    background: url(https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?q=75&fm=jpg&s=1ffa61419561b5c796bca3158e7c704c) no-repeat center center fixed;
+    background: url(https://ununsplash.imgix.net/photo-1421757295538-9c80958e75b0?dpr=2&fit=crop&fm=jpg&h=700&q=75&w=1050) no-repeat center center fixed;
+    
+    background: url(https://ununsplash.imgix.net/photo-1416431168657-a6c4184348ab) no-repeat top fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    color: #4EA4EF;
+    border-bottom: 1px solid #8AC2F2;
+    color: #B5DDFF;
+    border-bottom: 1px solid #98C8F0;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.subtitle {
+    font-weight: 200;
+    font-size: 14px;
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, "Courier New", monospace;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Ubuntu;
+}
+
+.holder {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 12px 21px 12px;
+    position: relative;
+    z-index: 0;
+    border: 2px solid;
+    border-left: 0;
+    border-right: 0;
+    border-color: white;
+    margin-top: 180px;
+}
+
+.scroll-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+
+.scroll-button:hover {
+    color: aliceblue;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.grid {
+    margin:0 auto;
+    padding-top: 140px;
+}
+
+.project {
+    padding:15px;
+    height:175px;
+    overflow: hidden;
+}
+
+.project .overlay {
+    position: absolute;
+    overflow: hidden;
+    z-index:10;
+    width:100%;
+}
+
+.project .image {
+    position: absolute;
+    overflow: hidden;
+}
+
+.project .image img {
+    max-width: 100%;
+    height:auto;
+}
