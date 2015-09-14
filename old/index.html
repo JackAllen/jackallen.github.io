@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="main">
+    <div id="cover"></div>
+    <nav>
+        <div class="left">
+            <div class="item">ABOUT</div>
+            <div class="item">WORK</div>
+        </div>
+        <div class="logo"><img src="http://builtbybuffalo.com/assets/img/hex-img-2@2x.png" />
+        </div>
+        <div class="right">
+            <div class="item">CONTACT</div>
+            <div class="item">ME</div>
+        </div>
+    </nav>
+    <section id="header">
+
+        <div class="holder">
+            <h1>Hello, World!</h1>
+            <div class="subtitle">This is hosted using <a target="_blank" href="https://pages.github.com/"><strong>GitHub</strong> pages</a>.</div>
+        </div>
+
+        <div class="scroll-button"><span class="glyphicon glyphicon-hand-down"></span>
+        </div>
+    </section>
+    <section id="information">
+        <div class="row grid">
+            <div class="col-md-12">
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+                <div class="col-md-3 project">
+                    <div class="overlay">ISMASH</div>
+                    <div class="image">
+                        <img src="https://www.bozboz.co.uk/img/projects/box_image/original/casestudy_cover_ismash-205-197.jpg" alt="iSmash" width="432" height="242">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        (function () {
+            var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
+            var header = document.getElementById("header");
+            //    header.setAttribute("style", "height:" + height + 'px');
+
+            var information = document.getElementById("information");
+            // information.setAttribute("style", "height:" + height + 'px');
+
+            $(document).ready(function () {
+
+                $(".scroll-button", "#header").click(function () {
+                    $("html, body").animate({
+                        scrollTop: $('#information').offset().top
+                    }, 500);
+                });
+
+                function LoadImage(name) {
+                    var img = new Image();
+                    var x = document.getElementById("cover");
+
+                    img.onload = function () {
+                        $(x).fadeOut(1000);
+
+                    };
+
+                    img.src = name;
+                }
+
+                LoadImage("https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?q=75&fm=jpg&s=1ffa61419561b5c796bca3158e7c704c");
+            });
+        })();
+    </script>
+</body>
+
+</html>
