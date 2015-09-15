@@ -20,7 +20,11 @@
 
     <p>Click to change the values of each cell</p>
     <div class="game" style="{{ 'width: calc(30px * ' + grid.width + ');height: calc(30px * ' + grid.height + ');' }}" ng-class="cell.isAlive ? 'alive' : 'dead'">
-        <div ng-repeat="cell in grid.cells" class="cell" ng-class="cell. alive ? 'alive' : 'dead'" ng-click="cell.alive = !cell.alive"></div>
+        <div 
+             ng-repeat="cell in grid.cells" 
+             class="cell {{ 'cell-' + cell.aliveNeighbours}}" 
+             ng-class="cell.alive ? 'alive' : 'dead'" 
+             ng-click="changeCell($index)"></div>
     </div>
     <p>
         <input ng-click="process()" type="button" value="Process" />

@@ -10,7 +10,7 @@ var MainController = function ($scope, $interval) {
 
     processNeighbours($scope)
     processAliveNeighbours($scope)
-    
+
     var go;
 
     $scope.process = function () {
@@ -22,7 +22,11 @@ var MainController = function ($scope, $interval) {
         }, 100)
     }
 
-
+    $scope.changeCell = function (index) {
+        $scope.grid.cells[index].alive = !$scope.grid.cells[index].alive
+        processNeighbours($scope)
+        processAliveNeighbours($scope)
+    }
 
 }
 
