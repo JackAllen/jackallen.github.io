@@ -94,7 +94,7 @@ header {
 }
 
 header .container {
-    padding: 20px 0;
+    padding: 20px 0 8px;
 }
 
 header ul li {
@@ -155,6 +155,7 @@ header .right-navigation li {
     margin: 0 10px;
     text-align: center;
     vertical-align: text-top;
+    margin-top: 25px;
 }
 
 .service .icon {
