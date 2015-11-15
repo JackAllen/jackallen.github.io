@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/grid.css" />
@@ -133,6 +135,7 @@
             </div>
         </div>
     </section>
+    
     <section id="prices" class="hidden">
         prices
     </section>
@@ -145,6 +148,21 @@
     <section id="contact" class="hidden">
     </section>
 
+    <section id="cd-google-map">
+        <!-- #google-container will contain the map  -->
+        <div id="google-container"></div>
+        <!-- #cd-zoom-in and #zoom-out will be used to create our custom buttons for zooming-in/out -->
+        <div id="cd-zoom-in"></div>
+        <div id="cd-zoom-out"></div>
+        <address>Unit 9 Avenue Fields, Birmingham Road, Stratford Upon Avon, Warwickshire, CV37 0HT</address>
+    </section>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIpS3fYRc4x2uFYSnKkqf7nArsbGGKYMU"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="/app.js"></script>
     <script src="/work/workController.js"></script>

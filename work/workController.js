@@ -65,6 +65,15 @@
             url: 'https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1922124_830960426966531_2981695383169254706_n.jpg?oh=a9e1a5e98af92a1b291490c25c563dfa&oe=56AEE8F5',
             type: 'sculptured'
         }, {
+            url: 'http://www.millymollymandycakes.co.uk/communities/8/004/011/837/678//images/4622713314.jpg',
+            type: 'sculptured'
+        }, {
+            url: 'http://www.millymollymandycakes.co.uk/communities/8/004/011/837/678//images/4619659700.jpg',
+            type: 'sculptured'
+        }, {
+            url: 'http://www.millymollymandycakes.co.uk/communities/8/004/011/837/678//images/4620721388.jpg',
+            type: 'sculptured'
+        }, {
             url: 'https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/10733987_822124904516750_5281351513382135556_n.jpg?oh=3205ca39feccdfe359e723a130758845&oe=56EB2850',
             type: 'sculptured'
         }, {
@@ -120,7 +129,7 @@
             type: 'wedding'
         }, {
             url: 'http://www.millymollymandycakes.co.uk/communities/8/004/011/837/678//images/4619693335.jpg',
-            type: 'sculptured'
+            type: 'wedding'
         }, {
             url: 'http://www.millymollymandycakes.co.uk/communities/8/004/011/837/678//images/4607885108.jpg',
             type: 'wedding'
