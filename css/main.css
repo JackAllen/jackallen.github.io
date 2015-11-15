@@ -180,12 +180,58 @@ header .right-navigation li {
 
 #work {}
 
-#work ul li {
+#work .cakes ul li {
     width: 200px;
     display: inline-block;
     margin: 20px;
 }
 
-#work ul li img {
+#work .cakes ul li img {
     width: 100%;
+    vertical-align: middle;
+}
+
+#work nav ul li {
+    display: inline-block;
+    background: red;
+    color: white;
+    margin: 10px 10px;
+    padding: 5px 0px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+#work nav ul li a {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#work nav ul li.boys a {
+    background-color: #a5dce1;
+    border-bottom: 2px solid #94d6d5;
+}
+
+#work nav ul li.girls a {
+    background-color: #EFCBDB;
+    border-bottom: 2px solid #E4BBCD;
+}
+
+#work nav ul li.sculptured a {
+    background-color: #C6E6C6;
+    border-bottom: 2px solid #B1DEB1;
+}
+
+#work nav ul li.traditional a {
+    background-color: #E0C1E0;
+    border-bottom: 2px solid #DCAEDC;
+}
+
+#work nav ul li.all a {
+    background-color: #F5DEAA;
+    border-bottom: 2px solid #E6C883;
+}
+
+#work nav ul li.wedding a {
+    background-color: #ECECC8;
+    border-bottom: 2px solid #D8D895;
 }

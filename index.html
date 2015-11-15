@@ -104,14 +104,33 @@
             <div class="title">Work</div>
             <nav>
                 <ul>
-                    <li></li>
+                    <li ng-click="vm.cakeFilter=''" class="all">
+                        <a>Show all</a>
+                    </li>
+                    <li ng-click="vm.cakeFilter='wedding'" class="wedding">
+                        <a>Wedding</a>
+                    </li>
+                    <li ng-click="vm.cakeFilter='sculptured'" class="sculptured">
+                        <a>Sculptured</a>
+                    </li>
+                    <li ng-click="vm.cakeFilter='boys'" class="boys">
+                        <a>Boys</a>
+                    </li>
+                    <li ng-click="vm.cakeFilter='girls'" class="girls">
+                        <a>Girls</a>
+                    </li>
+                    <li ng-click="vm.cakeFilter='traditional'" class="traditional">
+                        <a>Traditional</a>
+                    </li>
                 </ul>
             </nav>
-            <ul>
-                <li ng-repeat="cake in vm.cakes | filter:vm.cakeFilter">
-                    <img ng-src="{{cake.url}}">
-                </li>
-            </ul>
+            <div class="cakes">
+                <ul>
+                    <li ng-repeat="cake in vm.cakes | filter:vm.cakeFilter">
+                        <img ng-src="{{cake.url}}">
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id="prices" class="hidden">
