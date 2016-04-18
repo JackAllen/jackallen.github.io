@@ -1,0 +1,32 @@
+<div class="header u-flex-none">
+    <active-item flex item="ctrl.activeItem">
+        <div class="active-item">
+            <div class="date">{{ date | dateWithSuffix : 'EEEE, ddff MMMM yyyy' }}</div>
+            <input id="active-item-description" class="input" ng-model="ctrl.activeItem.description" placeholder="..." />
+            <stop-watch flex item="ctrl.activeItem"></stop-watch>
+        </div>
+    </active-item>
+</div>
+
+<div class="times">
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th class="u-text-center u-width-1">Duration</th>
+                <th class="u-text-center u-width-1" s>Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in ctrl.history" ng-click="ctrl.activeItemIndex = $index" ng-class="{'active' : ctrl.activeItemIndex === $index}">
+                <td>
+                    <input ng-model="item.description" ng-disabled="ctrl.activeItemIndex !== $index" />
+                </td>
+                <td class="u-text-center u-no-wrap">{{item.duration | date: "HH'h' mm'm' ss's'"}}</td>
+                <td class="u-text-center u-no-wrap">{{item.created | date: 'HH:mm'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<control-panel class="u-flex-none"></control-panel>

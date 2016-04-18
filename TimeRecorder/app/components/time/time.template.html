@@ -1,0 +1,20 @@
+<div class="part">
+    <strong>{{ date || 0 | date : 'HH' }}</strong>
+    <div>hours</div>
+</div>
+<div class="part colon">
+    <strong>:</strong>
+    <div>&nbsp;</div>
+</div>
+<div class="part">
+    <strong>{{ date || 0 | date : 'mm' }}</strong>
+    <div>minutes</div>
+</div>
+<div class="part colon">
+    <strong>:</strong>
+    <div>&nbsp;</div>
+</div>
+<div class="part">
+    <strong>{{ date || 0 | date : 'ss' }}</strong>
+    <div>seconds</div>
+</div>

@@ -1,0 +1,47 @@
+<html data-app>
+
+<head>
+    <title>Time Recorder</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <base href="/" target="_blank">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,300,400italic,300italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <app-container></app-container>
+
+    <script src="packages/angular.min.js"></script>
+    <script src="packages/angular-ui-router.min.js"></script>
+    <script src="packages/lodash-4.5.0.js"></script>
+
+    <script src="app/app.js"></script>
+
+    <script src="app/routes/home/index/home-index.controller.js"></script>
+
+    <script src="app/routes/auth-required.route.js"></script>
+    <script src="app/routes/home/home.route.js"></script>
+    <script src="app/routes/home/index/home-index.route.js"></script>
+
+    <script src="app/config/main.config.js"></script>
+
+    <script src="app/components/time-recorder/time-recorder.js"></script>
+    <script src="app/components/time-recorder/time-recorder.controller.js"></script>
+    <script src="app/components/main-app/main-app.js"></script>
+    <script src="app/components/auth-required/auth-required.js"></script>
+    <script src="app/components/app-container/app-container.js"></script>
+    <script src="app/components/stop-watch/stop-watch.controller.js"></script>
+    <script src="app/components/stop-watch/stop-watch.js"></script>
+    <script src="app/components/time/time.js"></script>
+    <script src="app/components/control-panel/control-panel.js"></script>
+    
+    <script src="app/helpers/date-with-suffix/date-with-suffix.js"></script>
+    
+    <script src="app/services/timespent/timespent-tasks.js"></script>
+    <script src="app/services/timespent/timespent-task-store.js"></script>
+
+    <script src="app/bootstrap.js"></script>
+</body>
+
+</html>

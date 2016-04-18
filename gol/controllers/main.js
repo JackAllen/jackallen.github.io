@@ -1,6 +1,6 @@
 var MainController = function ($scope, $interval) {
-    $scope.height = 18;
-    $scope.width = 17;
+    $scope.height = 20;
+    $scope.width = 40;
 
     $scope.processGrid = function () {
         $scope.grid = new grid($scope.width, $scope.height);
